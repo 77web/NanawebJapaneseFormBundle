@@ -1,6 +1,6 @@
 <?php
 
-namespace Nanaweb\JapaneseFormBundle\Tests\Type;
+namespace Nanaweb\JapaneseFormBundle\Tests\Form\Type;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

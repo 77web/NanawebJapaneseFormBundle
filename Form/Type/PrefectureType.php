@@ -1,6 +1,6 @@
 <?php
 
-namespace Nanaweb\JapaneseFormBundle\Type;
+namespace Nanaweb\JapaneseFormBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
