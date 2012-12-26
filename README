@@ -3,3 +3,5 @@ NanawebJapaneseFormBundle
 
 * PrefectureType: 日本の都道府県を選択肢に持つ選択フィールド
 ChoiceTypeの派生なのでmultiple,expanded等のオプションが利用可能。
+
+* FullNameType: 姓・名の分割入力フィールド
