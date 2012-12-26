@@ -1,3 +1,4 @@
 parameters:
     nanaweb_japaneseform.form_resources:
         - 'NanawebJapaneseFormBundle:Form:jp_fullname_widget.html.twig'
+        - 'NanawebJapaneseFormBundle:Form:jp_postal_code_widget.html.twig'

@@ -59,3 +59,7 @@ services:
         class: Nanaweb\JapaneseFormBundle\Form\Type\FullNameType
         tags:
             - { name: form.type, alias: jp_fullname }
+    nanaweb_japaneseform.type.postalcode:
+        class: Nanaweb\JapaneseFormBundle\Form\Type\PostalCodeType
+        tags:
+            - { name: form.type, alias: jp_postal_code }

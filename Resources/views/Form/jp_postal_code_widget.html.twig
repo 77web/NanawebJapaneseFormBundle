@@ -1,0 +1,6 @@
+{% block jp_postal_code_widget %}
+{% spaceless %}
+{{ form_errors(form) }}
+{{ form_widget(form.three, { 'attr': { 'size': 4 } }) }}-{{ form_widget(form.four, { 'attr': { 'size': 6 } }) }}
+{% endspaceless %}
+{% endblock %}
