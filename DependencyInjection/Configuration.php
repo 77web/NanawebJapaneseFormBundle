@@ -13,6 +13,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
+        
         $rootNode = $treeBuilder->root('nanaweb_japanese_form');
 
         // Here you should define the parameters that are allowed to

@@ -1,0 +1,3 @@
+parameters:
+    nanaweb_japaneseform.form_resources:
+        - 'NanawebJapaneseFormBundle:Form:jp_fullname_widget.html.twig'

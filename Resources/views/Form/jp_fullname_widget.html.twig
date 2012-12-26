@@ -1,0 +1,8 @@
+{% block jp_fullname_widget %}
+{% spaceless %}
+{{ form_errors(form) }}
+{% for child in form %}
+  {{ form_label(child, null, { 'translation_domain': translation_domain }) }}{{ form_widget(child) }}
+{% endfor %}
+{% endspaceless %}
+{% endblock %}

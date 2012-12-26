@@ -50,8 +50,12 @@ parameters:
         
 services:
     nanaweb_japaneseform.type.prefecture:
-        class: Nanaweb\JapaneseFormBundle\Type\PrefectureType
+        class: Nanaweb\JapaneseFormBundle\Form\Type\PrefectureType
         arguments:
             - "%nanaweb_japaneseform.prefecture_list%"
         tags:
             - { name: form.type, alias: jp_prefecture }
+    nanaweb_japaneseform.type.fullname:
+        class: Nanaweb\JapaneseFormBundle\Form\Type\FullNameType
+        tags:
+            - { name: form.type, alias: jp_fullname }
