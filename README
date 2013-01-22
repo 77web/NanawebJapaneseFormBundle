@@ -3,5 +3,6 @@ NanawebJapaneseFormBundle
 
 * PrefectureType: 日本の都道府県を選択肢に持つ選択フィールド
 ChoiceTypeの派生なのでmultiple,expanded等のオプションが利用可能。
+都道府県NoはJIS規格準拠。twig関数japanese_prefecture()により都道府県名に変換して表示できます。
 
 * FullNameType: 姓・名の分割入力フィールド

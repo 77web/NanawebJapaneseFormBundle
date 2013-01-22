@@ -63,3 +63,9 @@ services:
         class: Nanaweb\JapaneseFormBundle\Form\Type\PostalCodeType
         tags:
             - { name: form.type, alias: jp_postal_code }
+    nanaweb_japaneseform.twig.extension.japanese_prefecture:
+        class: Nanaweb\JapaneseFormBundle\Twig\Extension\JapanesePrefectureExtension
+        arguments:
+            - "%nanaweb_japaneseform.prefecture_list%"
+        tags:
+            - { name: twig.extension }
