@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "symfony/symfony": ">2.0",
+        "symfony/form": ">2.0",
+        "symfony/options-resolver": ">2.0",
         "twig/twig": ">=1.12,<2.0-dev"
     },
     "autoload": {
