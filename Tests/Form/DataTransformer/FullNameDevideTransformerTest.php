@@ -4,10 +4,13 @@ namespace Nanaweb\JapaneseFormBundle\Tests\Form\DataTransformer;
 
 use Nanaweb\JapaneseFormBundle\Form\DataTransformer\FullNameDevideTransformer;
 
-class FullNameDevideDataTransformerTest extends \PHPUnit_Framework_TestCase
+class FullNameDevideTransformerTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var FullNameDevideTransformer
+     */
     private $transformer;
-    
+
     public function setUp()
     {
         $this->transformer = new FullNameDevideTransformer('sei', 'mei');
@@ -55,6 +58,6 @@ class FullNameDevideDataTransformerTest extends \PHPUnit_Framework_TestCase
     
     public function tearDown()
     {
-        $this->transform = null;
+        $this->transformer = null;
     }
 }

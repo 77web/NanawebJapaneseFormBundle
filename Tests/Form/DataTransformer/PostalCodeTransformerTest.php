@@ -6,6 +6,9 @@ use Nanaweb\JapaneseFormBundle\Form\DataTransformer\PostalCodeTransformer;
 
 class PostalCodeTransformerTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var PostalCodeTransformer
+     */
     private $transformer;
     
     public function setUp()
