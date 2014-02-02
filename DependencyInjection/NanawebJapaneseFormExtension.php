@@ -20,13 +20,14 @@ class NanawebJapaneseFormExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
         
-        //TODO: check if templating engine is twig or not
-        $loader->load('twig.yml');
-        $formResources = $container->getParameter('twig.form.resources');
-        $additionalFormResources = $container->getParameter('nanaweb_japaneseform.form_resources');
-        foreach ($additionalFormResources as $resource) {
-            $formResources[] = $resource;
+        if (in_array('twig', $container->getParameter('templating.engines'))) {
+            $loader->load('twig.yml');
+            $formResources = $container->getParameter('twig.form.resources');
+            $additionalFormResources = $container->getParameter('nanaweb_japaneseform.form_resources');
+            foreach ($additionalFormResources as $resource) {
+                $formResources[] = $resource;
+            }
+            $container->setParameter('twig.form.resources', $formResources);
         }
-        $container->setParameter('twig.form.resources', $formResources);
     }
 }
