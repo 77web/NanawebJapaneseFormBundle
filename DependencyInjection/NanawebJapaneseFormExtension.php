@@ -24,8 +24,7 @@ class NanawebJapaneseFormExtension extends Extension
         $loader->load('twig.yml');
         $formResources = $container->getParameter('twig.form.resources');
         $additionalFormResources = $container->getParameter('nanaweb_japaneseform.form_resources');
-        foreach ($additionalFormResources as $resource)
-        {
+        foreach ($additionalFormResources as $resource) {
             $formResources[] = $resource;
         }
         $container->setParameter('twig.form.resources', $formResources);
